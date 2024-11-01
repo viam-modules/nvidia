@@ -1,0 +1,18 @@
+{
+    "module_id": "viam:nvidia",
+    "visibility": "public",
+    "url": "https://github.com/viam-modules/nvidia",
+    "description": "Go module for nvidia jetson board, compatible with Viam",
+    "models": [
+      {
+        "api": "rdk:component:board",
+        "model": "viam:nvidia:jetson"
+      }
+    ],
+    "build": {
+      "build": "make module",
+      "path": "bin/module.tar.gz",
+      "arch" : ["linux/arm64", "linux/amd64", "darwin/arm64"]
+    },
+    "entrypoint": "bin/nvidia"
+  }
