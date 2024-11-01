@@ -8,10 +8,12 @@ require (
 	github.com/edaniels/golinters v0.0.5-0.20220906153528-641155550742
 	github.com/fullstorydev/grpcurl v1.8.6
 	github.com/golangci/golangci-lint v1.61.0
+	github.com/pkg/errors v0.9.1
 	github.com/rhysd/actionlint v1.6.24
 	go.viam.com/rdk v0.48.2
 	go.viam.com/utils v0.1.110
 	gotest.tools/gotestsum v1.10.0
+	periph.io/x/host/v3 v3.8.1-0.20230331112814-9f0d9f7d76db
 )
 
 require (
@@ -185,6 +187,7 @@ require (
 	github.com/miekg/dns v1.1.53 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
+	github.com/mkch/gpio v0.0.0-20190919032813-8327cd97d95e // indirect
 	github.com/montanaflynn/stats v0.7.0 // indirect
 	github.com/moricho/tparallel v0.3.2 // indirect
 	github.com/nakabonne/nestif v0.3.1 // indirect
@@ -209,7 +212,6 @@ require (
 	github.com/pion/stun v0.6.1 // indirect
 	github.com/pion/transport/v2 v2.2.10 // indirect
 	github.com/pion/turn/v2 v2.1.6 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/polyfloyd/go-errorlint v1.6.0 // indirect
@@ -319,4 +321,5 @@ require (
 	mvdan.cc/gofumpt v0.7.0 // indirect
 	mvdan.cc/unparam v0.0.0-20240528143540-8a5130ca722f // indirect
 	nhooyr.io/websocket v1.8.7 // indirect
+	periph.io/x/conn/v3 v3.7.0 // indirect
 )
