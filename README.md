@@ -12,6 +12,10 @@ We recommend selecting hardware that can operate 3.3V signals or lower.
 For details, see your board's specification.
 For the Jetson Nano, see pages 1-3 of the [Jetson Nano Developer Kit 40-Pin Expansion Header GPIO Usage Considerations Applications Note](https://developer.nvidia.com/jetson-nano-developer-kit-40-pin-expansion-header-gpio-usage-considerations-applications-note).
 
+## Setup
+* Follow the [Jetson setup instructions](https://www.jetsonhacks.com/2020/05/16/nvidia-jetson-xavier-nx-developer-kit/)
+* Also run `sudo modprobe spidev` or add as a start up script
+
 ## Configure your jetson board
 
 Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [machine](https://docs.viam.com/fleet/machines/) in the [Viam app](https://app.viam.com/).
