@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("NAME"))
+	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("nvidia"))
 }
 
 func mainWithArgs(ctx context.Context, args []string, logger logging.Logger) error {
