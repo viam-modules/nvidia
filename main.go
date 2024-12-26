@@ -4,7 +4,7 @@ package main
 import (
 	"context"
 
-	"nvidia/jetson"
+	"github.com/viam-modules/nvidia/jetson"
 
 	"go.viam.com/rdk/components/board"
 	"go.viam.com/rdk/logging"

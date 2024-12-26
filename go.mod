@@ -1,4 +1,4 @@
-module nvidia
+module github.com/viam-modules/nvidia
 
 go 1.23.0
 
