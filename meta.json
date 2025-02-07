@@ -7,7 +7,9 @@
   "models": [
     {
       "api": "rdk:component:board",
-      "model": "viam:nvidia:jetson"
+      "model": "viam:nvidia:jetson",
+      "markdown_link": "README.md#configure-your-jetson-board",
+      "short_description": "board model for the nvidia jetson orin, jetson AGX, and jetson nano"
     }
   ],
   "build": {

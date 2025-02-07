@@ -16,13 +16,13 @@ For the Jetson Nano, see pages 1-3 of the [Jetson Nano Developer Kit 40-Pin Expa
 * Follow the [Jetson setup instructions](https://www.jetsonhacks.com/2020/05/16/nvidia-jetson-xavier-nx-developer-kit/)
 * Also run `sudo modprobe spidev` or add as a start up script
 
-## Configure your jetson board
-
 Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [machine](https://docs.viam.com/fleet/machines/) in the [Viam app](https://app.viam.com/).
 [Add board / nvidia:jetson to your machine](https://docs.viam.com/configure/#components).
 
 > [!NOTE]
 > For more information, see [Configure a Machine](https://docs.viam.com/configure/).
+
+## Configure your jetson board
 
 ### Attributes
 
@@ -34,7 +34,7 @@ The following attributes are available for `viam:nvidia:jetson` boards:
 
 For instructions on implementing digital interrupts, see [Digital interrupt configuration](#Digital-interrupt-configuration)
 
-## Example configuration
+### Example configuration
 
 ### `viam:nvidia:jetson`
 ```json
@@ -48,12 +48,7 @@ For instructions on implementing digital interrupts, see [Digital interrupt conf
   }
 ```
 
-### Next Steps
-- To test your board, expand the **TEST** section of its configuration pane or go to the [**CONTROL** tab](https://docs.viam.com/fleet/control/).
-- To write code against your board, use one of the [available SDKs](https://docs.viam.com/sdks/).
-- To view examples using a board component, explore [these tutorials](https://docs.viam.com/tutorials/).
-
-## Digital interrupt configuration
+### Digital interrupt configuration
 [Interrupts](https://en.wikipedia.org/wiki/Interrupt) are a method of signaling precise state changes.
 Configuring digital interrupts to monitor GPIO pins on your board is useful when your application needs to know precisely when there is a change in GPIO value between high and low.
 
@@ -78,7 +73,6 @@ Integrate `digital_interrupts` into your machine in the `attributes` of your boa
 
 The following attributes are available for `digital_interrupts`:
 
-<!-- prettier-ignore -->
 | Name | Type | Required? | Description |
 | ---- | ---- | --------- | ----------- |
 |`name` | string | **Required** | Your name for the digital interrupt. |
@@ -110,3 +104,8 @@ The following attributes are available for `digital_interrupts`:
   ]
 }
 ```
+
+## Next Steps
+- To test your board, expand the **TEST** section of its configuration pane or go to the [**CONTROL** tab](https://docs.viam.com/fleet/control/).
+- To write code against your board, use one of the [available SDKs](https://docs.viam.com/sdks/).
+- To view examples using a board component, explore [these tutorials](https://docs.viam.com/tutorials/).
