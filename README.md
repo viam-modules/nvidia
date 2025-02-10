@@ -24,6 +24,27 @@ Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [m
 
 ## Configure your jetson board
 
+### Example configuration
+```json
+  {}
+```
+
+### Example configuration with optional digital interrupts
+```json
+{
+  "digital_interrupts": [
+    {
+      "name": "your-interrupt-1",
+      "pin": "15"
+    },
+    {
+      "name": "your-interrupt-2",
+      "pin": "16"
+    }
+  ]
+}
+```
+
 ### Attributes
 
 The following attributes are available for `viam:nvidia:jetson` boards:
@@ -33,20 +54,6 @@ The following attributes are available for `viam:nvidia:jetson` boards:
 | `digital_interrupts` | object | Optional | Any digital interrupts's pin number and name. |
 
 For instructions on implementing digital interrupts, see [Digital interrupt configuration](#Digital-interrupt-configuration)
-
-### Example configuration
-
-### `viam:nvidia:jetson`
-```json
-  {
-     "name": "<your-nvidia-jetson-board-name>",
-      "model": "viam:nvidia:jetson",
-      "type": "board",
-      "namespace": "rdk",
-      "attributes": {},
-      "depends_on": []
-  }
-```
 
 ### Digital interrupt configuration
 [Interrupts](https://en.wikipedia.org/wiki/Interrupt) are a method of signaling precise state changes.
@@ -69,7 +76,7 @@ Integrate `digital_interrupts` into your machine in the `attributes` of your boa
 }
 ```
 
-### Attributes
+#### Attributes
 
 The following attributes are available for `digital_interrupts`:
 
@@ -78,32 +85,6 @@ The following attributes are available for `digital_interrupts`:
 |`name` | string | **Required** | Your name for the digital interrupt. |
 |`pin`| string | **Required** | The pin number of the board's GPIO pin that you wish to configure the digital interrupt for. |
 
-### Example configuration
-
-```json {class="line-numbers linkable-line-numbers"}
-{
-  "components": [
-    {
-      "name": "<your-up-upboard-board-name>",
-      "model": "viam:up:upboard",
-      "type": "board",
-      "namespace": "rdk",
-      "attributes": {
-        "digital_interrupts": [
-          {
-            "name": "your-interrupt-1",
-            "pin": "15"
-          },
-          {
-            "name": "your-interrupt-2",
-            "pin": "16"
-          }
-        ]
-      }
-    }
-  ]
-}
-```
 
 ## Next Steps
 - To test your board, expand the **TEST** section of its configuration pane or go to the [**CONTROL** tab](https://docs.viam.com/fleet/control/).
