@@ -20,10 +20,11 @@ const modelName = "jetson"
 var Model = resource.NewModel("viam", "nvidia", "jetson")
 
 func init() {
-	gpioMappings, err := genericlinux.GetGPIOBoardMappings(modelName, boardInfoMappings)
+	logger := logging.NewLogger(modelName)
+	gpioMappings, err := genericlinux.GetGPIOBoardMappings(modelName, boardInfoMappings, logger)
 	var noBoardErr genericlinux.NoBoardFoundError
 	if errors.As(err, &noBoardErr) {
-		logging.Global().Debugw("error getting jetson GPIO board mapping", "error", err)
+		logger.Debugw("error getting jetson GPIO board mapping", "error", err)
 	}
 
 	resource.RegisterComponent(
