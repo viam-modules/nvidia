@@ -7,7 +7,6 @@ import (
 	"context"
 
 	"github.com/pkg/errors"
-
 	"go.viam.com/rdk/components/board"
 	"go.viam.com/rdk/components/board/genericlinux"
 	"go.viam.com/rdk/logging"
