@@ -174,14 +174,14 @@ var jetsonOrinNXPins = []genericlinux.PinDefinition{
 
 var boardInfoMappings = map[string]genericlinux.BoardInformation{
 	jetsonTX2NX: {
-		jetsonTX2NXPins,
-		[]string{
+		PinDefinitions: jetsonTX2NXPins,
+		Compats: []string{
 			"nvidia,p3509-0000+p3636-0001",
 		},
 	},
 	jetsonTX2: {
-		jetsonTX2Pins,
-		[]string{
+		PinDefinitions: jetsonTX2Pins,
+		Compats: []string{
 			"nvidia,p2771-0000",
 			"nvidia,p2771-0888",
 			"nvidia,p3489-0000",
@@ -191,29 +191,29 @@ var boardInfoMappings = map[string]genericlinux.BoardInformation{
 		},
 	},
 	jetsonNano: {
-		jetsonNanoPins,
-		[]string{
+		PinDefinitions: jetsonNanoPins,
+		Compats: []string{
 			"nvidia,p3450-0000",
 			"nvidia,p3450-0002",
 			"nvidia,jetson-nano",
 		},
 	},
 	jetsonOrinAGX: {
-		jetsonOrinAGXPins,
-		[]string{
+		PinDefinitions: jetsonOrinAGXPins,
+		Compats: []string{
 			"nvidia,p3737-0000+p3701-0000",
 			"nvidia,p3737-0000+p3701-0004",
 		},
 	},
 	jetsonOrinNX: {
-		jetsonOrinNXPins,
-		[]string{
+		PinDefinitions: jetsonOrinNXPins,
+		Compats: []string{
 			"nvidia,p3509-0000+p3767-0000",
 		},
 	},
 	jetsonOrinNano: {
-		jetsonOrinNXPins, // The Jetson Orin Nano has the exact same pinout as the Jetson Orin NX.
-		[]string{
+		PinDefinitions: jetsonOrinNXPins, // The Jetson Orin Nano has the exact same pinout as the Jetson Orin NX.
+		Compats: []string{
 			"nvidia,p3768-0000+p3767-0003",
 			"nvidia,p3768-0000+p3767-0005",
 			"nvidia,p3767-0003",
